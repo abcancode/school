@@ -13,7 +13,7 @@
            <div class="box">
               <div class="box-header with-border">
                 <h3 class="box-title">Users Comprehensive List</h3>
-                <a href="{{ route('user.create')}}" style="float:right;" class="btn btn-rounded btn-success mb-5">Add User</a>
+                <a href="{{ route('user.create')}}" style="float:right;" class="btn btn-rounded btn-success mb-5"><i class="fa fa-user-plus" aria-hidden="true"></i> Add User</a>
               </div>
               <!-- /.box-header -->
               <div class="box-body">
