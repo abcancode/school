@@ -19,7 +19,7 @@ class StudentYearController extends Controller
 
     public function SaveStudentYear(Request $request){
             $validatedData = $request->validate([
-            'name' => 'required|unique:student_classes', 
+            'name' => 'required|unique:student_years', 
             ]);          
 
             $data = new StudentYear();
@@ -28,7 +28,7 @@ class StudentYearController extends Controller
 
             
         $notification = array(
-            'message' => 'New Student Class Created Successfully',
+            'message' => 'New Student Year Created Successfully',
             'alert-type' => 'success'
         );
 
@@ -51,7 +51,7 @@ class StudentYearController extends Controller
 
             
         $notification = array(
-            'message' => 'New Student Year Created Successfully',
+            'message' => 'Student Year Updated Successfully',
             'alert-type' => 'success'
         );
 

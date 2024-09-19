@@ -51,7 +51,7 @@ class StudentClassController extends Controller
 
             
         $notification = array(
-            'message' => 'New Student Class Created Successfully',
+            'message' => 'Student Class Updated Successfully',
             'alert-type' => 'success'
         );
 
