@@ -28,13 +28,13 @@
                           </tr>
                       </thead>
                       <tbody>
-                        @foreach ($allData as $key => $student)
+                        @foreach ($allData as $key => $shift)
                         <tr>
                             <td>{{ $key + 1 }}</td>
-                            <td>{{ $student -> name }}</td>
+                            <td>{{ $shift -> name }}</td>
                             <td>
-                                <a href="{{ route('edit.student.shift', $student->id)}}" class="btn btn-info">Edit</a>
-                                <a href="{{ route('delete.student.shift', $student->id)}}" class="btn btn-danger" id="delete">Delete</a>
+                                <a href="{{ route('edit.student.shift', $shift->id)}}" class="btn btn-info">Edit</a>
+                                <a href="{{ route('delete.student.shift', $shift->id)}}" class="btn btn-danger" id="delete">Delete</a>
                             </td>
                         </tr>     
                         @endforeach                                               
